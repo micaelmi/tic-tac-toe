@@ -1,7 +1,9 @@
 const board = document.querySelectorAll('.block')
 const reloadButton = document.querySelector('.reload')
-let isPLayer1 = true, player = 'X', isEnded = false, movements = 0
+const playerTurn = document.querySelector('#player-turn')
+let isPLayer1 = true, player = '×', isEnded = false, movements = 0
 
+playerTurn.textContent = `Vez do ${player}`
 // Adiciona o evento de click nas casas do tabuleiro
 // Ao clicar, já faz a troca de jogadores
 for (let i = 0; i < board.length; i++) {
@@ -13,6 +15,7 @@ for (let i = 0; i < board.length; i++) {
                 endGame(player)
                 isPLayer1 = !isPLayer1
                 setPlayer()
+                playerTurn.textContent = `Vez do ${player}`
             }
         }
     })
@@ -21,9 +24,9 @@ for (let i = 0; i < board.length; i++) {
 // Função para realizar a troca de jogadores
 function setPlayer() {
     if (isPLayer1) {
-        player = 'X'
+        player = '×'
     } else {
-        player = 'O'
+        player = '〇'
     }
 }
 

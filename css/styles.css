@@ -74,8 +74,12 @@ main {
   cursor: pointer;
 }
 
+#player-turn {
+  margin: 1rem;
+  color: rgb(180, 181, 215);
+}
+
 .reload {
-  margin-top: 2rem;
   font-size: 1rem;
   color: rgb(29, 30, 47);
   background-color: rgb(180, 181, 215);
