@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap"); /*=========== RESET ==========*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: rgb(29, 30, 47);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-top: -3rem;
+  margin-bottom: 1rem;
+  color: rgb(180, 181, 215);
+}
+header h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.board .block {
+  width: 6rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(180, 181, 215);
+  font-size: 4rem;
+  border: 1px solid rgb(180, 181, 215);
+  transition: 0.3s ease;
+}
+.board .block:hover {
+  background-color: rgb(39, 41, 69);
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.reload {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: rgb(29, 30, 47);
+  background-color: rgb(180, 181, 215);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.reload:hover {
+  background-color: rgb(135, 137, 187);
+  padding: 0.5rem 1.5rem;
+}/*# sourceMappingURL=styles.css.map */
